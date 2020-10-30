@@ -29,3 +29,37 @@
    2. **Koszty użytkowania serwisu**
 
       Koszty serwisu zależą oczywiście od wybranego regionu, w przypadku West Europe możemy użytkować darmowy pakiet (ograniczeniem jest maksymalnie jedno zapytanie na sekundę oraz maksymalnie 5000 transakcji w miesiącu). W przypadku pakietu standard możemy wysyłać zapytania z częstotliwością 10 na sekundę a 1000 zapytań kosztuje nas 1$ - w przypadku gdy wykonamy mniej niż 1M transakcji.
+
+
+
+
+
+# Language Understanding Intelligent Service (LUIS)
+
+1. **Wstęp**
+
+   1. **Wstępne przedstawienie serwisu**
+
+      LUIS pozwala na inteligentną interakcję z użytkownikiem aplikacji. Z wykorzystaniem machine leariningu serwis ten pozwala nam przewidzieć ogólne znaczenie tekstu przesłanego przez użytkownika a także wyciągnać z niego konkretne, interesujące nas dane.
+
+   2. **Opis działania serwisu**
+
+      Serwis pozwala nam na zrozumienie intencji użytkownika na podstawie dostarczonej wypowiedzi. Dodatkowo jako odpowiedź otrzymujemy także słowa lub frazy, które są kluczowe w danym sformuowaniu (miejsce, przedmiot, data czy imię). Takie działanie pozwala nam na analizę wiadomości dostarczonych przez użytkownika i podjęcie odpowiedniego działania bez konieczności reakcji ze strony człowieka.
+
+2. **Przypadki użycia serwisu**
+
+   - Bot służący do rezerwacji biletów lotniczych, na podstawie zapytania użytkownika jesteśmy w stanie odczytać skąd, dokąd i dla ilu osób użytkownik chce nabić bilet.
+   - Inteligentny formularz składania zamówienia na jedzenie, nie trzeba mozolnie wypełniać kategorii i wielu dodatkowych parametrów a wystarczy wpisać na przykład: Dwie pizze na grubym cieście z szynką i ananasem.
+   - Umawianie się na wizytę do lekarza za pomocą czatu. Na podstawie specjalizacji, i terminu bot jest w stanie zaproponować konkretnego lekarza i placówkę.
+
+3. **Jak pracować z serwisem**
+
+   1. **Opis użycia serwisu**
+
+      Po utworzeniu odpowiedniego zasobu i jego konfiguracji mamy dostęp do narzędzia pozwalającego nam douczanie modelu do naszych potrzeb. Możemy wprowadzać odpowiednie intencje a także korygować nieodpowiednio sklasyfikowane zapytania. Po opublikowaniu naszego modelu możemy wysyłać do niego zapytania API z dowolnej aplikacji.
+
+   2. **Koszty użytkowania serwisu**
+
+      Darmowy pakiet dla regionu West Europe pozwala nam wykonać 5 zapytań na sekundę i maksymalnie do 10 tysięcy transakcji miesięcznie. W przypadku pakietu standardowego częstotliwośc możę wynosić 50 zapytań na sekundę a za 1000 transakcji płacimy 1,5$ mesięcznie. 
+
+      

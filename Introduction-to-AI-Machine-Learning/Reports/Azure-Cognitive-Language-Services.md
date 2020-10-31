@@ -60,6 +60,49 @@
 
    2. **Koszty użytkowania serwisu**
 
-      Darmowy pakiet dla regionu West Europe pozwala nam wykonać 5 zapytań na sekundę i maksymalnie do 10 tysięcy transakcji miesięcznie. W przypadku pakietu standardowego częstotliwośc możę wynosić 50 zapytań na sekundę a za 1000 transakcji płacimy 1,5$ mesięcznie. 
+      Darmowy pakiet dla regionu West Europe pozwala nam wykonać 5 zapytań na sekundę i maksymalnie do 10 tysięcy transakcji miesięcznie. W przypadku pakietu standardowego częstotliwośc możę wynosić 50 zapytań na sekundę a za 1000 transakcji płacimy 1,5$ mesięcznie.
 
       
+
+      
+
+      
+
+# Text Analytics API
+
+1. **Wstęp**
+
+   1. **Wstępne przedstawienie serwisu**
+
+      Test Analytics pozwala na analizę dostarczonego do serwisu tekstu. Jako efekt jego działania możemy otrzymać informację na temat nastawienia twócy, języka w jakim tekst jest napisany a także wydobyć z niego kluczowe frazy.
+
+   2. **Opis działania serwisu**
+
+      Serwis pozwala nam na lepsze zrozumienie intencji osoby który napisała dany tekst. Mogą to być opinie w internecie, komentarze czy wiadomości dostarczone do firmy. Serwis pozwala nam wydobyć inormacje z dostarczonego tekstu, klasyfikacja nacehcowania tekstu odbywa się w skali od 0 do 1. Im bliżej do wartości 1 oznacza to, że tekst jest bardziej pozytywny, im bliżej do 0 to tekst jest nacechowany bardziej negatywnie.
+
+2. **Przypadki użycia serwisu**
+
+   - Analiza komentarzy w sieci dotyczących naszej firmy, jeżeli znajdzemy opinie nacechowane bardzo negatywnie, możemy zareagować z odpowiednią odpowiedzią na dany komentarz.
+   - Filtr przed wpuszczeniem wiadomości do komunikatora, jeżeli nie chcemy negatywnych treści w naszej społecznośći możemy odrzucić wiadomości, które zostaną sklasyfikowane jako nacechowane negatywnie.
+   - Jeżeli nasza firma obsługuje klientów z róznych krajów, możemy wykryć język wiadomości przesłanej do supportu i przypisać jej do odpowiedniego konsultanta, który zna dany język.
+
+3. **Jak pracować z serwisem**
+
+   1. **Opis użycia serwisu**
+
+      Aby korzystać z serwisu musimy stworzyć odpowiedni zasób i uzyskać dostęp do klucza dostępowego. Następnie możemy wysyłać zapytania API z tekstem do analizy z dowolnego miejsca.
+
+   2. **Koszty użytkowania serwisu**
+
+      W przypadku Text Analytics i regionu West Europe, mamy bardzo dużo dostępnych pakietów. Pakiet darmowy umożliwia nam wysłanie maksymalnie 5000 zapytań miesięcznie. Pakiet standard oferuje nam 1000 zapytań za 2$ jeżeli wykonamy mniej niż 500 tysięcy zapytań w miesiącu.
+
+      
+
+      
+
+      
+
+
+
+
+

@@ -31,3 +31,34 @@
    2. **Koszty użytkowania serwisu**
 
       W przypadku regionu West Europe, darmowy pakiet pozwala nam na wykonywanie 3 zapytań w ciągu sekundy, 100 transakcji w ciągu sekundy oraz maksymalnie 50 000 transakcji w miesiącu. W przypadku planu standardowego otrzymujemy dodatkowo brak limitu na ilość zapytań w miesiącu.
+
+
+
+## Bot Framework Composer
+
+1. **Wstęp**
+
+   1. **Wstępne przedstawienie serwisu**
+
+      Bot Framework Composer, pozwala nam na szybkie stworzenie botów, bez potrzeby pisania kodu.
+
+   2. **Opis działania serwisu**
+
+      Narzędzie pozwala nam tworzyć szablon konwersacji z Botem, za pomocą bloków akcji i połączeń. Gotowy bot może zostać wdrożony lub możemy na jego podstawie wygenerować kod. Istotną kwestią narzędzie jest fakt, że jest ono bezpłatne.
+
+2. **Przypadki użycia serwisu**
+
+   - Brak znajomości programowania ale potrzeba stworzenia bota wspomagającego obsługę klienta w czasie pandemii.
+   - Chęć szybkiego prototypowania bota i sprawdzenia jak spisuje się w danym zadaniu.
+
+3. **Jak pracować z serwisem**
+
+   1. **Opis użycia serwisu**
+
+      Aby skorzystać z narzędzia musimy pobrać i zainstalować Bot Framework Emulator oraz Bot Framework Composer. Po uruchomieniu programu, na ekranie głónym możemy zdecydować, czy chcemy zaczynać od zera czy może wykorzystać jakiś przygotowany template. Całość tworzenia bota opiera się na tworzeniu odpowiednich bloków, konfigurowania ich parametrów i odpowiedniego ich łączenia.
+
+   2. **Koszty użytkowania serwisu**
+
+      Samo oprogramowanie Bot Framework Composer jest darmowe i na licencji open source.
+
+      

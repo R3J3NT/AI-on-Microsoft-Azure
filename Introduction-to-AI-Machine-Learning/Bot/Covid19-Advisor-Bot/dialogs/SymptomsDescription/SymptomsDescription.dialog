@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "dDZ3L2",
+    "name": "SymptomsDescription",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "IYtPes"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Odrqed"
+          },
+          "activity": "${SendActivity_Odrqed()}"
+        }
+      ]
+    }
+  ],
+  "generator": "SymptomsDescription.lg",
+  "recognizer": "SymptomsDescription.lu.qna",
+  "id": "SymptomsDescription"
+}

@@ -1,0 +1,8 @@
+{
+    "$kind": "Microsoft.MultiLanguageRecognizer",
+    "id": "LUIS_covid19-advisor-bot",
+    "recognizers": {
+        "en-us": "covid19-advisor-bot.en-us.lu",
+        "": "covid19-advisor-bot.en-us.lu"
+    }
+}

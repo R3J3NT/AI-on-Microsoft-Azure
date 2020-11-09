@@ -42,7 +42,46 @@
                 }
               ]
             }
-          ]
+          ],
+          "value": "dialog.foreach.value"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "xPzcFJ",
+        "name": "Sick"
+      },
+      "intent": "Sick",
+      "condition": "#Sick.score > 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "ybkN3P"
+          },
+          "activityProcessed": true,
+          "dialog": "SymptomsVerification"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "DpU8kp",
+        "name": "Symptoms"
+      },
+      "intent": "Symptoms",
+      "condition": "#Symptoms.score > 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "YqS5gF"
+          },
+          "activityProcessed": true,
+          "dialog": "SymptomsDescription"
         }
       ]
     }

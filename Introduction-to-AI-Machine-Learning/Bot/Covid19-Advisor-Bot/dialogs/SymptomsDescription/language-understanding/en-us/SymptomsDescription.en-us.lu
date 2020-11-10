@@ -1,0 +1,18 @@
+
+# ChoiceInput_Response_FexIwM
+- common symptoms
+- less common symptoms
+- serious symptoms
+
+@ list type = 
+	- Common symptoms:
+	      - common
+            - common one
+            - popular ones            
+      - Less Common symptoms:
+            - less common
+            - rare
+            - rare ones
+      - Serious symptoms: 
+            - serious
+            - serious ones

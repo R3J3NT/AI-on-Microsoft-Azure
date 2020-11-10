@@ -1,4 +1,37 @@
 [import](common.lg)
 
 # SendActivity_Odrqed()
-- Lista symptomow:
+  - COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization. 
+
+
+
+
+
+# ChoiceInput_Prompt_FexIwM()
+- What type of symptomps would you like to see?
+# ChoiceInput_UnrecognizedPrompt_FexIwM()
+- Sorry i can not understand what type of symptoms would you like to see? Please choose between Common symptoms/Less Common symptoms/ Serious symptoms.
+# SendActivity_YodSI1()
+- ```Less Common symptoms:
+        - aches and pains
+        - sore throat
+        - diarrhoea
+        - conjunctivitis
+        - headache
+        - loss of taste or smell
+        - a rash on skin, or discolouration of fingers or toes
+    ```
+# SendActivity_ICco7F()
+- ```Most common symptoms:
+       - fever
+       - dry cough
+       - tiredness
+    ```
+# SendActivity_jaATHc()
+- ```Serious symptom:
+      - difficulty breathing or shortness of breath
+      - chest pain or pressure
+      - loss of speech or movement
+    ```
+# SendActivity_tz3lw2()
+- Sorry i do not understand, please try again with symptoms.

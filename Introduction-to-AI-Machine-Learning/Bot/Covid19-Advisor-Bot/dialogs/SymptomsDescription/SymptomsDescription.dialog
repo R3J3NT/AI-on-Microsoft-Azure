@@ -22,6 +22,94 @@
             "id": "Odrqed"
           },
           "activity": "${SendActivity_Odrqed()}"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "FexIwM"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_FexIwM()}",
+          "unrecognizedPrompt": "${ChoiceInput_UnrecognizedPrompt_FexIwM()}",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "dialog.type",
+          "choices": [
+            "Common symptoms",
+            "Less common symptoms",
+            "Serious symptoms"
+          ],
+          "outputFormat": "value",
+          "value": "= @type",
+          "recognizerOptions": {
+            "recognizeOrdinals": true,
+            "recognizeNumbers": true
+          },
+          "style": "heroCard"
+        },
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "LuGpiu"
+          },
+          "condition": "dialog.type",
+          "cases": [
+            {
+              "value": "Less common symptoms",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "YodSI1"
+                  },
+                  "activity": "${SendActivity_YodSI1()}"
+                }
+              ]
+            },
+            {
+              "value": "Common symptoms",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "ICco7F"
+                  },
+                  "activity": "${SendActivity_ICco7F()}"
+                }
+              ]
+            },
+            {
+              "value": "Serious symptoms",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "jaATHc"
+                  },
+                  "activity": "${SendActivity_jaATHc()}"
+                }
+              ]
+            }
+          ],
+          "default": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "tz3lw2"
+              },
+              "activity": "${SendActivity_tz3lw2()}"
+            }
+          ]
         }
       ]
     }

@@ -43,7 +43,8 @@
               ]
             }
           ],
-          "value": "dialog.foreach.value"
+          "value": "dialog.foreach.value",
+          "index": "dialog.foreach.index"
         }
       ]
     },
@@ -94,9 +95,9 @@
         {
           "$kind": "Microsoft.SendActivity",
           "$designer": {
-            "id": "0iIUeJ"
+            "id": "m6nq9f"
           },
-          "activity": "${SendActivity_0iIUeJ()}"
+          "activity": "${SendActivity_m6nq9f()}"
         }
       ]
     }

@@ -20,3 +20,8 @@
         - Survey to check if you can be infected
         - Current statistic of covid-19
     ```
+
+# SendActivity_Tk77fp()
+- Now we have: ${dialog.api_response.content} confirmed cases in Poland
+# SendActivity_IELbXB()
+- Sorry now i can not get number of cases, please try again later.

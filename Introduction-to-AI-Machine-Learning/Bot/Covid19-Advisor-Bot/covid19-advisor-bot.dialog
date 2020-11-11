@@ -134,6 +134,51 @@
           "activity": "${SendActivity_VJNofJ()}"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "UHXRF9",
+        "name": "Cases"
+      },
+      "intent": "Cases",
+      "actions": [
+        {
+          "$kind": "Microsoft.HttpRequest",
+          "$designer": {
+            "id": "Rbmp0K"
+          },
+          "method": "GET",
+          "url": "http://localhost:7071/api/HttpTriggerGetCases",
+          "resultProperty": "dialog.api_response",
+          "responseType": "json"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "UvA2bK"
+          },
+          "condition": "dialog.api_response.statusCode==200",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "Tk77fp"
+              },
+              "activity": "${SendActivity_Tk77fp()}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "IELbXB"
+              },
+              "activity": "${SendActivity_IELbXB()}"
+            }
+          ]
+        }
+      ]
     }
   ],
   "$schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/stable/Composer/packages/server/schemas/sdk.schema",

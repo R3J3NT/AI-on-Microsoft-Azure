@@ -1,0 +1,40 @@
+
+# ConfirmInput_Response_eJGrXS
+-yes
+-no
+
+@ list confirmation = 
+    - yes : 
+		    - yeah
+		    - ok
+		    - yup
+            - sure
+            - i would like           
+    - no :
+        - nope
+        - not now
+        - not really
+        - go back    
+        - exit
+        - end    
+       
+
+# ConfirmInput_Response_VI9wUF
+-yes
+-no
+
+@ list confirmationContact = 
+    - yes : 
+		    - yeah
+		    - ok
+		    - yup
+            - sure
+            - i would like           
+    - no :
+        - nope
+        - not now
+        - not really
+        - go back    
+        - exit
+        - end    
+       

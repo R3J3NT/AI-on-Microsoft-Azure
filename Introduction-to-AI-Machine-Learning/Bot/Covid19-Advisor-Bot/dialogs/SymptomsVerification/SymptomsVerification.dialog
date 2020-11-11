@@ -17,11 +17,98 @@
       },
       "actions": [
         {
-          "$kind": "Microsoft.SendActivity",
+          "$kind": "Microsoft.ConfirmInput",
           "$designer": {
-            "id": "WnXQPU"
+            "id": "eJGrXS"
           },
-          "activity": "${SendActivity_WnXQPU()}"
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ConfirmInput_Prompt_eJGrXS()}",
+          "unrecognizedPrompt": "${ConfirmInput_UnrecognizedPrompt_eJGrXS()}",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "dialog.survey",
+          "confirmChoices": [
+            "Yes",
+            "No"
+          ],
+          "value": "=@confirmation"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "eoKfyW"
+          },
+          "condition": "dialog.survey == true",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "o3SF7y"
+              },
+              "activity": "${SendActivity_o3SF7y()}"
+            }
+          ],
+          "actions": [
+            {
+              "$kind": "Microsoft.ConfirmInput",
+              "$designer": {
+                "id": "VI9wUF"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ConfirmInput_Prompt_VI9wUF()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true,
+                "inlineOrMore": ", or "
+              },
+              "property": "dialog.contact",
+              "value": "= @confirmationContact",
+              "confirmChoices": [
+                "Yes"
+              ]
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "u4TSX7"
+              },
+              "condition": "dialog.contact == true",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "e5azsY"
+                  },
+                  "activity": "${SendActivity_e5azsY()}"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "pMNqU5"
+                  },
+                  "activity": "${SendActivity_pMNqU5()}"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

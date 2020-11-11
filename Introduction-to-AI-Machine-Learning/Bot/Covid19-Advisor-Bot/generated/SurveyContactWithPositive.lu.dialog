@@ -1,0 +1,8 @@
+{
+    "$kind": "Microsoft.MultiLanguageRecognizer",
+    "id": "LUIS_SurveyContactWithPositive",
+    "recognizers": {
+        "en-us": "SurveyContactWithPositive.en-us.lu",
+        "": "SurveyContactWithPositive.en-us.lu"
+    }
+}

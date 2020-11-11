@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "E2KxXn",
+    "name": "SurveyEndNegative",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "OPINMa"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "4lXza7"
+          },
+          "activity": "${SendActivity_4lXza7()}"
+        }
+      ]
+    }
+  ],
+  "generator": "SurveyEndNegative.lg",
+  "recognizer": "SurveyEndNegative.lu.qna",
+  "id": "SurveyEndNegative"
+}

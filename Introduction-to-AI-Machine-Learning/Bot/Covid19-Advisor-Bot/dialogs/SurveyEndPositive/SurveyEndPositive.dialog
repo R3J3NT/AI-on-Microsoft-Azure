@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "aJ66XK",
+    "name": "SurveyEndPositive",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "grRKhi"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "c2ctTE"
+          },
+          "activity": "${SendActivity_c2ctTE()}"
+        }
+      ]
+    }
+  ],
+  "generator": "SurveyEndPositive.lg",
+  "recognizer": "SurveyEndPositive.lu.qna",
+  "id": "SurveyEndPositive"
+}

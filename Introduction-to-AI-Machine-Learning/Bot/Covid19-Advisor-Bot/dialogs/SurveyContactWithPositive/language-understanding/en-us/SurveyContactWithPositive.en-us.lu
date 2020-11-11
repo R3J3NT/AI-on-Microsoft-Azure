@@ -1,0 +1,12 @@
+
+# ConfirmInput_Response_MzovUG
+-yes
+-no
+
+@ list response = 
+    - yes : 
+		    - yes i had
+            - probably yes     
+    - no :
+        - no way
+        - probably not

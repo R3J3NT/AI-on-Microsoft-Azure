@@ -1,0 +1,8 @@
+{
+    "$kind": "Microsoft.MultiLanguageRecognizer",
+    "id": "LUIS_SurveyFever",
+    "recognizers": {
+        "en-us": "SurveyFever.en-us.lu",
+        "": "SurveyFever.en-us.lu"
+    }
+}

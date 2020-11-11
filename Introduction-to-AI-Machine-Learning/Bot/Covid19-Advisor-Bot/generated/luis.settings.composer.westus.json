@@ -1,7 +1,9 @@
 {
     "luis": {
+        "SurveyContactWithPositive_en_us_lu": "3d259879-14c7-44c1-9aa3-a7c3f1b7b9e4",
+        "SymptomsVerification_en_us_lu": "99dc5ea2-d461-47f0-b422-2b97ac7ef657",
         "SymptomsDescription_en_us_lu": "d3cebb14-fd10-4168-80ab-57c12012b248",
         "covid19_advisor_bot_en_us_lu": "28197678-c28a-46c8-8807-669bb8565752",
-        "SymptomsVerification_en_us_lu": "99dc5ea2-d461-47f0-b422-2b97ac7ef657"
+        "SurveyFever_en_us_lu": "5037f995-7074-4e67-8374-87d86acd25be"
     }
 }

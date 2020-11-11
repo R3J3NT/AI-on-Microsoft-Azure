@@ -1,0 +1,13 @@
+
+# ConfirmInput_Response_tkivO8
+-yes
+-no
+
+@ list responseFever = 
+    - yes : 
+		    - very high
+            - yes i have fever    
+    - no :
+        - no 
+        - 36.6
+        - tempertaure is good

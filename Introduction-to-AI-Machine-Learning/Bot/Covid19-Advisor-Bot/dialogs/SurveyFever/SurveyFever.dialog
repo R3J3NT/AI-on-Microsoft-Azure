@@ -1,9 +1,9 @@
 {
   "$kind": "Microsoft.AdaptiveDialog",
   "$designer": {
-    "id": "CMP2ec",
-    "name": "SymptomsVerification",
-    "description": "A survey to check if user have symptoms of covid-19."
+    "id": "XdqYv4",
+    "name": "SurveyFever",
+    "description": ""
   },
   "autoEndDialog": true,
   "defaultResultProperty": "dialog.result",
@@ -13,67 +13,66 @@
       "$designer": {
         "name": "BeginDialog",
         "description": "",
-        "id": "szsVp0"
+        "id": "90gjvi"
       },
       "actions": [
         {
           "$kind": "Microsoft.ConfirmInput",
           "$designer": {
-            "id": "eJGrXS"
+            "id": "tkivO8"
           },
           "defaultLocale": "en-us",
           "disabled": false,
           "maxTurnCount": 3,
           "alwaysPrompt": false,
           "allowInterruptions": false,
-          "prompt": "${ConfirmInput_Prompt_eJGrXS()}",
-          "unrecognizedPrompt": "${ConfirmInput_UnrecognizedPrompt_eJGrXS()}",
+          "prompt": "${ConfirmInput_Prompt_tkivO8()}",
+          "unrecognizedPrompt": "",
           "invalidPrompt": "",
           "defaultValueResponse": "",
           "choiceOptions": {
             "includeNumbers": true,
-            "inlineOrMore": ", or ",
-            "inlineOr": " or ",
-            "inlineSeparator": ", "
+            "inlineOrMore": ", or "
           },
-          "property": "dialog.survey",
+          "property": "dialog.fever",
+          "value": "=@responseFever",
+          "style": "heroCard",
           "confirmChoices": [
             "Yes",
             "No"
-          ],
-          "value": "=@confirmation",
-          "style": "heroCard"
+          ]
         },
         {
           "$kind": "Microsoft.IfCondition",
           "$designer": {
-            "id": "eoKfyW"
+            "id": "7pVh7J"
           },
-          "condition": "dialog.survey == true",
-          "elseActions": [
-            {
-              "$kind": "Microsoft.SendActivity",
-              "$designer": {
-                "id": "o3SF7y"
-              },
-              "activity": "${SendActivity_o3SF7y()}"
-            }
-          ],
+          "condition": "dialog.fever == true",
           "actions": [
             {
               "$kind": "Microsoft.BeginDialog",
               "$designer": {
-                "id": "tLkEDf"
+                "id": "HmzieG"
               },
               "activityProcessed": true,
-              "dialog": "SurveyContactWithPositive"
+              "dialog": "SurveyEndPositive"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "MyNp1r"
+              },
+              "activityProcessed": true,
+              "dialog": "SurveyEndNegative"
             }
           ]
         }
       ]
     }
   ],
-  "generator": "SymptomsVerification.lg",
-  "recognizer": "SymptomsVerification.lu.qna",
-  "id": "SymptomsVerification"
+  "generator": "SurveyFever.lg",
+  "recognizer": "SurveyFever.lu.qna",
+  "id": "SurveyFever"
 }

@@ -1,8 +1,8 @@
 {
   "$kind": "Microsoft.AdaptiveDialog",
   "$designer": {
-    "id": "XdqYv4",
-    "name": "SurveyFever",
+    "id": "yX35yr",
+    "name": "SurveySymptoms",
     "description": ""
   },
   "autoEndDialog": true,
@@ -13,48 +13,47 @@
       "$designer": {
         "name": "BeginDialog",
         "description": "",
-        "id": "90gjvi"
+        "id": "UHaxmB"
       },
       "actions": [
         {
           "$kind": "Microsoft.ConfirmInput",
           "$designer": {
-            "id": "tkivO8"
+            "id": "n6tVVW"
           },
           "defaultLocale": "en-us",
           "disabled": false,
           "maxTurnCount": 3,
           "alwaysPrompt": false,
           "allowInterruptions": false,
-          "prompt": "${ConfirmInput_Prompt_tkivO8()}",
+          "prompt": "${ConfirmInput_Prompt_n6tVVW()}",
           "unrecognizedPrompt": "",
           "invalidPrompt": "",
           "defaultValueResponse": "",
           "choiceOptions": {
             "includeNumbers": true,
             "inlineOrMore": ", or ",
-            "inlineOr": " or ",
-            "inlineSeparator": ", "
+            "inlineOr": " or "
           },
-          "property": "dialog.fever",
-          "value": "=@responseFever",
+          "property": "dialog.symptoms",
+          "value": "=@responseSymptoms",
           "style": "heroCard",
           "confirmChoices": [
-            "Yesn I have fever",
-            "No, my temperature is correct"
+            "Yes I have",
+            "No, I do not have any"
           ]
         },
         {
           "$kind": "Microsoft.IfCondition",
           "$designer": {
-            "id": "7pVh7J"
+            "id": "33YVYe"
           },
-          "condition": "dialog.fever == true",
+          "condition": "dialog.symptoms == true",
           "actions": [
             {
               "$kind": "Microsoft.BeginDialog",
               "$designer": {
-                "id": "HmzieG"
+                "id": "8ERyuT"
               },
               "activityProcessed": true,
               "dialog": "SurveyEndPositive"
@@ -64,17 +63,17 @@
             {
               "$kind": "Microsoft.BeginDialog",
               "$designer": {
-                "id": "nGvbIT"
+                "id": "q9ocRD"
               },
               "activityProcessed": true,
-              "dialog": "SurveySymptoms"
+              "dialog": "SurveyEndNegative"
             }
           ]
         }
       ]
     }
   ],
-  "generator": "SurveyFever.lg",
-  "recognizer": "SurveyFever.lu.qna",
-  "id": "SurveyFever"
+  "generator": "SurveySymptoms.lg",
+  "recognizer": "SurveySymptoms.lu.qna",
+  "id": "SurveySymptoms"
 }

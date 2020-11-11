@@ -1,0 +1,15 @@
+
+# ConfirmInput_Response_n6tVVW
+-yes
+-no
+
+@ list responseSymptoms = 
+    - yes : 
+		    - i have
+            - yes i have
+            - some of them
+            - all of them      
+    - no :
+        - nope
+        - i do not have anyone
+        - anyone

@@ -100,6 +100,23 @@
           "activity": "${SendActivity_m6nq9f()}"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "euBCQS",
+        "name": "Hello"
+      },
+      "intent": "Hello",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "xWwem4"
+          },
+          "activity": "${SendActivity_xWwem4()}"
+        }
+      ]
     }
   ],
   "$schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/stable/Composer/packages/server/schemas/sdk.schema",

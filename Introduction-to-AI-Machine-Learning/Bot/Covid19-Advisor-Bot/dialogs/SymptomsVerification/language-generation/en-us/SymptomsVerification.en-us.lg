@@ -1,7 +1,7 @@
 [import](common.lg)
 
 # ConfirmInput_Prompt_eJGrXS()
-- Wouldd you like to start survey about possible covid-19 infection?
+- Would you like to take a survey to determine your probability of being COVID-positive?
 # ConfirmInput_UnrecognizedPrompt_eJGrXS()
 - Sorry I do not understand, would you like to start or no?
 # SendActivity_o3SF7y()

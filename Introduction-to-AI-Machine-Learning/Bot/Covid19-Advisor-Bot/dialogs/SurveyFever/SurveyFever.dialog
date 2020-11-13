@@ -40,8 +40,8 @@
           "value": "=@responseFever",
           "style": "heroCard",
           "confirmChoices": [
-            "Yesn I have fever",
-            "No, my temperature is correct"
+            "Yes, I have a fever",
+            "No, my body temperature is correct"
           ]
         },
         {

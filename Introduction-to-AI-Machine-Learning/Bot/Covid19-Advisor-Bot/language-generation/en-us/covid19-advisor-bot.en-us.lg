@@ -1,25 +1,20 @@
 [import](common.lg)
 
-# SendActivity_Welcome
+# SendActivity_Welcome()
 - ${WelcomeUser()}
-
 # SendActivity_xWwem4()
-- Hello! Nice to see you, how can i help you?
-- Hi! How can i help you?
-- Nice to see you! Can i help you?
-- Hello! What i can do for you?
-
-
-
+- Hello! Nice to see you, how can I help you?
+- Hi! How can I help you?
+- Nice to see you! Can I help you?
+- Hello! What I can do for you?
 # SendActivity_VJNofJ()
-- ``` I can help you with information about covid-19. You can ask me for:
+- ``` I can help you with information about COVID-19. You can ask me for:
         - General information about covid-19
         - Symptoms of covid-19 infection
-        - Survey to check if you can be infected
-        - Current statistic of covid-19
+        - A survey to check if you can be infected
+        - Current statistics on covid-19
     ```
-
 # SendActivity_Tk77fp()
-- Now we have: ${dialog.api_response.content} confirmed cases in Poland
+- As of now we have ${dialog.api_response.content} confirmed cases in Poland.
 # SendActivity_IELbXB()
-- Sorry now i can not get number of cases, please try again later.
+- Sorry, the number of cases is currently unavailable, please try again later.

@@ -33,14 +33,15 @@
           "choiceOptions": {
             "includeNumbers": true,
             "inlineOrMore": ", or ",
-            "inlineOr": " or "
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
           },
           "property": "dialog.symptoms",
           "value": "=@responseSymptoms",
           "style": "heroCard",
           "confirmChoices": [
-            "Yes I have",
-            "No, I do not have any"
+            "Yes, I do",
+            "No, I do not have any of those symptoms"
           ]
         },
         {

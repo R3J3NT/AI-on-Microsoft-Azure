@@ -16,7 +16,7 @@
 
     https://docs.microsoft.com/en-us/composer/install-composer
 
-    ![image-20201113202351620](C:\Users\Jakub\AppData\Roaming\Typora\typora-user-images\image-20201113202351620.png)
+    ![image-20201113202351620](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/COVID-19-Advisor-Bot/images/BotFrameworkComposer.PNG)
 
     *Appearance of the Bot Framework Composer v1.1.1*
 

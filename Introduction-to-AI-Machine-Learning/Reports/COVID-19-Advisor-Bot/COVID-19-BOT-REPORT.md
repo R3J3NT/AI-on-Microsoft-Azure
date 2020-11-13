@@ -26,7 +26,7 @@
 
     https://portal.azure.com/
 
-    ![image-20201113202916000](C:\Users\Jakub\AppData\Roaming\Typora\typora-user-images\image-20201113202916000.png)
+    ![image-20201113202916000](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/COVID-19-Advisor-Bot/images/CreateResourceGroup.PNG)
 
     *Creating a new resource group in the Azure Portal view.*
 
@@ -34,13 +34,13 @@
 
   - Create a new Language Understanding Service and connect it to the Bot project in the Bot Framework Composer.
 
-    ![image-20201113202948592](C:\Users\Jakub\AppData\Roaming\Typora\typora-user-images\image-20201113202948592.png)
+    ![image-20201113202948592](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/COVID-19-Advisor-Bot/images/CreateLUIS.PNG)
 
     *Creating a new LUIS instance (important note: In Composer V1.1.1, LUIS works correctly only when the instance is created in the West US region).*
 
     
 
-    ![image-20201113203353884](C:\Users\Jakub\AppData\Roaming\Typora\typora-user-images\image-20201113203353884.png)
+    ![image-20201113203353884](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/COVID-19-Advisor-Bot/images/LinkLUIS.PNG)
 
     *Linking the correct configuration for the newly created LUIS instance (Go to Azure Bot Framework Settings -> Bot Settings and copy the parameters from the Keys and Endpoint tab on the Azure portal)*
 
@@ -48,19 +48,19 @@
 
   - Create a QnA instance and fill the database with frequently asked questions. Go to https://www.qnamaker.ai/ and follow the steps listed to create a personalized QnA database.
 
-    ![image-20201113203803134](C:\Users\Jakub\AppData\Roaming\Typora\typora-user-images\image-20201113203803134.png)
+    ![image-20201113203803134](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/COVID-19-Advisor-Bot/images/CreateQnA.PNG)
 
     *View of the QnA Maker*
 
     
 
-    ![image-20201113204313754](C:\Users\Jakub\AppData\Roaming\Typora\typora-user-images\image-20201113204313754.png)
+    ![image-20201113204313754](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/COVID-19-Advisor-Bot/images/CreateQnA2.PNG)
 
     *Creating a new instance of QnA*
 
      
 
-    ![image-20201113204449898](C:\Users\Jakub\AppData\Roaming\Typora\typora-user-images\image-20201113204449898.png)
+    ![image-20201113204449898](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/COVID-19-Advisor-Bot/images/LinkQnA.PNG)
 
     *Creating a link to the created instance in the Bot Framework Composer (Settings -> Bot Settings and copy parameters)*
 
@@ -68,7 +68,7 @@
 
   - If you would like to host an Azure Function gathering data about the current COVID-19 statistics locally, download Visual Studio Code and install the Azure Functions plugin. 
 
-    ![image-20201113204915432](C:\Users\Jakub\AppData\Roaming\Typora\typora-user-images\image-20201113204915432.png)
+    ![image-20201113204915432](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/COVID-19-Advisor-Bot/images/AzureFunctions.PNG)
 
     
 
@@ -82,7 +82,7 @@
 
     `func start HttpTriggerGetCases`
 
-    ![image-20201113205211951](C:\Users\Jakub\AppData\Roaming\Typora\typora-user-images\image-20201113205211951.png)
+    ![image-20201113205211951](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/COVID-19-Advisor-Bot/images/RunFunctions.PNG)
 
     
 
@@ -90,12 +90,11 @@
 
     
 
-    ![image-20201113205446345](C:\Users\Jakub\AppData\Roaming\Typora\typora-user-images\image-20201113205446345.png)
-
-    ![image-20201113205645423](C:\Users\Jakub\AppData\Roaming\Typora\typora-user-images\image-20201113205645423.png)
+    ![image-20201113205446345](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/COVID-19-Advisor-Bot/images/StartBot.PNG)
 
   
 
+  
 - ##### Architecture
 
   The main part of the Bot design was done in the Bot Framework Composer. The Bot also uses additional Azure services:
@@ -120,4 +119,4 @@
 
   Architecture diagram:
 
-  ![diagram](C:\Users\Jakub\Downloads\diagram.png)
+  ![diagram](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/COVID-19-Advisor-Bot/images/Diagram.png)

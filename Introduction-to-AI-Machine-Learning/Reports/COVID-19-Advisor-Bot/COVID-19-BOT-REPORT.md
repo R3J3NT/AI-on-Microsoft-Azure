@@ -1,5 +1,9 @@
 ## Report: Building a COVID-19 Advisor Bot using Azure
 
+Video Presentation: https://youtu.be/matYzRIW4sg
+
+
+
 - ##### Use Case Scenario
 
   The situation with the COVID-19 pandemic has caused a lot of disinformation and fake news to appear on the Internet. People have trouble with getting the information they require from reliable sources, so the bot was created to provide accurate data and get early advice regarding COVID-19 symptoms. The Bot will help with basic information about the COVID-19 pandemic, tests, symptoms and actions which should be taken in case of an infection. Additionally, the Bot will present current statistics in Poland and can help assess the risk of an infection with a quick survey on the symptoms and points of contact. 
@@ -94,7 +98,6 @@
 
   
 
-  
 - ##### Architecture
 
   The main part of the Bot design was done in the Bot Framework Composer. The Bot also uses additional Azure services:

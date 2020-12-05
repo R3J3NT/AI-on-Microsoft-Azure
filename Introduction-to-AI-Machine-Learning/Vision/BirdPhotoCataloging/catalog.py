@@ -1,10 +1,12 @@
 import os
 import sys
 import requests
+import time
 from PIL import Image
 from io import BytesIO
 
-bird_types = ["tit","thrush","bullfinch","jay"]
+bird_types = ["tit","thrush","bullfinch","jay","need-verification"]
+probability_level = 0.98
 subscription_key = ""
 endpoint = ""
 
@@ -37,22 +39,30 @@ def call_custom_vision_API(path):
     return analysis
 
 def check_output_catalogs():
-    
     for bird in bird_types:
         if not os.path.isdir('./'+bird):
             os.makedirs('./'+bird)
 
+def move_photo(from_path, to_path):
+    os.rename(from_path, to_path)
+
 load_env_variables()
 check_output_catalogs()
-print(subscription_key)
-print(endpoint)
 
 if os.path.isdir('./photos'):
     for file in os.listdir("./photos"):
         if file.endswith(".jpg"):
-            print(os.path.abspath(os.path.join("./photos", file)))
+            absolute_path = os.path.abspath('./')
+            path = os.path.abspath(os.path.join("./photos", file))
+            analysis = call_custom_vision_API(path)
+            probability_result = analysis["predictions"][0]['probability']
+            tag_name_result = analysis["predictions"][0]['tagName']
+            if probability_result > probability_level:
+                move_photo(path,absolute_path+'\\'+tag_name_result+'\\'+file)
+            else:
+                move_photo(path,absolute_path+'\\need-verification\\'+file)
+            time.sleep(1) #F0 tier restriction - maximum 2TPS
+           
 else:
     print('ERROR - Can not found photos directory')
     sys.exit()
-
-

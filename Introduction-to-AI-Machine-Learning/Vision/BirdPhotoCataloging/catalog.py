@@ -52,13 +52,14 @@ def check_output_catalogs():
 def move_photo(from_path, to_path):
     os.rename(from_path, to_path)
 
+
 load_env_variables()
 check_output_catalogs()
 
 if os.path.isdir('./photos'):
     for file in os.listdir("./photos"):
         if file.endswith(".jpg"):
-            print('[CATALOGING] File: %20s' % file, end='')
+            print('[CATALOGING] File: %12s' % file, end='')
             absolute_path = os.path.abspath('./')
             path = os.path.abspath(os.path.join("./photos", file))
             analysis = call_custom_vision_API(path)
@@ -67,8 +68,8 @@ if os.path.isdir('./photos'):
 
             if probability_result > probability_level:
                 move_photo(path, absolute_path+'\\'+tag_name_result+'\\'+file)
-                print(' -> [CUSTOM VISION] response: %10s' % tag_name_result + " " +
-                      str(probability_result) + '-> [MOVE] Catalog: \\'+tag_name_result)
+                print(' -> [CUSTOM VISION] response: %10s' % tag_name_result + " %10s"
+                      % str(probability_result) + ' -> [MOVE] Catalog: \\'+tag_name_result)
             else:
                 move_photo(path, absolute_path+'\\need-verification\\'+file)
                 print(' -> [MOVE] Catalog: need-verification')

@@ -18,6 +18,8 @@ Video Presentation:
 
   - Log in to the Azure portal https://portal.azure.com/, and create a new resource group for this project.
 
+    ![1-Resource-Group.PNG](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/Bird-Spieces-Cataloging/images/1-Resource-Group.PNG)
+
     
 
   - From the portal, create a new Cognitive Service Custom Vision resource. It should contain both Training and Prediction resources. The Python script is prepared to use the Free F0 tier, with maximum 2 transactions per second.

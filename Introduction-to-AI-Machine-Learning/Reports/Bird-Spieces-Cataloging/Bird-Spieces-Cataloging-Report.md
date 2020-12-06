@@ -24,37 +24,57 @@ Video Presentation:
 
   - From the portal, create a new Cognitive Service Custom Vision resource. It should contain both Training and Prediction resources. The Python script is prepared to use the Free F0 tier, with maximum 2 transactions per second.
 
+    ![2-Create-Resources.PNG](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/Bird-Spieces-Cataloging/images/2-Create-Resources.PNG)
+
     
 
   - Go to the Custom Vision Portal https://www.customvision.ai/, and log in.
+
+    ![3-Custom-Vision-Portal.PNG](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/Bird-Spieces-Cataloging/images/3-Custom-Vision-Portal.PNG)
 
   
 
   - Create a new project using the resources from point 2. The project should be Classification type and use Multiclass (Single tag per image).
 
+    ![4-Create-Project.PNG](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/Bird-Spieces-Cataloging/images/4-Create-Project.PNG)
+
     
 
   - After creating the new project, go to Add images.
+
+    ![5-Add-images.PNG](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/Bird-Spieces-Cataloging/images/5-Add-images.PNG)
 
     
 
   - Load all of your training photos and add correct labels for them.
 
+    ![6-Label.PNG](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/Bird-Spieces-Cataloging/images/6-Label.PNG)
+
     
 
   - Start training your model using the Train button.
+
+    ![7-Train-Model-Start.PNG](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/Bird-Spieces-Cataloging/images/7-Train-Model-Start.PNG)
 
     
 
   - After some time, you will receive a summary of your model training.
 
+    ![8-Train-Summary.PNG](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/Bird-Spieces-Cataloging/images/8-Train-Summary.PNG)
+
     
 
   - You can test your model using the Quick test button on the portal and, if the results are accurate enough, you can publish your model to be accessible from API. To do this, you should click the Publish button.
 
+    ![9-Publish.PNG](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/Bird-Spieces-Cataloging/images/9-Publish.PNG)
+
     
 
   - After publishing, you need to copy your connection parameters (Endpoint and Prediction-Key) from the Prediction URL tab. Once you have your parameters, you need to set them to environmental variables with keys: "SUBSCRIPTION_KEY" and "ENDPOINT" to be accessible from the Python script.
+
+    ![10-Get-parameters.PNG](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/Bird-Spieces-Cataloging/images/10-Get-parameters.PNG)
+
+    
 
   
 
@@ -67,5 +87,7 @@ Video Presentation:
   
 
   Architecture diagram:
+
+  ![11-Architecture.png](https://github.com/R3J3NT/AI-on-Microsoft-Azure/blob/main/Introduction-to-AI-Machine-Learning/Reports/Bird-Spieces-Cataloging/images/11-Architecture.png)
 
   
